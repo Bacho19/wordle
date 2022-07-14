@@ -1,8 +1,10 @@
 import { ModalWrapper } from "./styled";
 
-const Modal = () => {
+const Modal = ({ children, isActive }) => {
   return (
-    <ModalWrapper>Modal</ModalWrapper>
+    <ModalWrapper isActive={isActive}>
+      {children}
+    </ModalWrapper>
   )
 };
 
